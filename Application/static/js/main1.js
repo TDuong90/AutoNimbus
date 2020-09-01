@@ -52,8 +52,9 @@ d3.csv("../static/js/joined_traffic_weather2.csv")
             // lineGroupageDays = sketchLineGroupageDays(data, ctxLineGroupAge);          
             // barChart = sketchBar(data, ctxbar);
             lineAgeGroup = sketchLineGroupageDays(data, ctxLineGroupAge);
-            sketchMapbox(data);
-
+            weatherinformationBar(0, data);
+            hourlyInformationBar(0, data);
+            
         })
 
 
@@ -109,7 +110,7 @@ function pickedMonth(){
             lineChart = skecthLine(data, ctxline);
             // barChart = sketchBar(data, ctxbar);
             lineAgeGroup = sketchLineGroupageDays(data, ctxLineGroupAge);
-            sketchMapbox(data);
+            
 
         })
     
