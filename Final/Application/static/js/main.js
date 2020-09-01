@@ -32,7 +32,8 @@ var initialLenght;
 var jumbotron1Label = document.getElementById("jumbotron1");
 var jumbotron1UnertextLabel = document.getElementById("jumbotron1Undertext");
 
-d3.csv("../static/js/joined_traffic_weather2.csv")
+d3.csv("./Final/Application/static/js/joined_traffic_weather2.csv")
+// d3.csv("../static/js/joined_traffic_weather2.csv")
         .then(function(data){
             // console.log(data);
             initialLength = data.length;
@@ -82,7 +83,8 @@ function pickedMonth(){
     };
 
     if(numMonth>=0){
-        d3.csv("../static/js/joined_traffic_weather2.csv")
+        d3.csv("./Final/Application/static/js/joined_traffic_weather2.csv")
+        // d3.csv("../static/js/joined_traffic_weather2.csv")
         .then(function(data){
             // console.log(data);
             return queryByMonth(numMonth, data);
